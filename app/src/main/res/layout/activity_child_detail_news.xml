@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_child_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.hzkc.parent.activity.ChildDetailActivity">
+
+    <include layout="@layout/activity_top_new" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:padding="15dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_icon"
+                        android:clickable="false"
+                        android:layout_width="60dp"
+                        android:src="@drawable/mine_head__01"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:layout_height="60dp" />
+                    <ImageView
+                        android:layout_width="66dp"
+                        android:src="@drawable/child_wk"
+                        android:layout_centerInParent="true"
+                        android:layout_height="66dp" />
+                    <ImageView
+                        android:clickable="false"
+                        android:id="@+id/iv_child_icon"
+                        android:layout_width="30dp"
+                        android:src="@drawable/child_pz"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/iv_icon"
+                        android:layout_below="@+id/iv_icon"
+                        android:layout_marginLeft="-20dp"
+                        android:layout_marginTop="-25dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="性别 : "
+                    android:textColor="#333"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/textView6" />
+
+                <RadioGroup
+                    android:id="@+id/client_charge_radiogroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_01"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="#333"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/btn_checked"
+                        android:drawablePadding="10dp"
+                        android:textSize="14dp"
+                        android:text="男" />
+                    <RadioButton
+                        android:id="@+id/rb_02"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="女"
+                        android:button="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/btn_checked"
+                        android:textColor="#333"
+                        android:textSize="14dp"
+                        android:checked="true" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="#ddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="姓名 : "
+                    android:textColor="#333"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+                <EditText
+                    android:id="@+id/et_child_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="小名"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:textColor="#333"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="#ddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="禁用状态栏"
+                    android:textColor="#333"
+                    android:textSize="14dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/iv_state_on"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:src="@drawable/plan_on" />
+                    <ImageView
+                        android:id="@+id/iv_state_off"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:src="@drawable/plan_off" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="#ddd" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="25dp"
+                android:paddingTop="8dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plan_lbf"
+                    android:layout_marginTop="3dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="14dp"
+                    android:text="禁用状态栏启用后,孩子端将不能使用状态栏，有利于更好的控制，一般情况下不用开启"
+                    android:textColor="#666" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_child_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:layout_marginLeft="18dp"
+                    android:textSize="14dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="#11000000" />
+
+                <TextView
+                    android:id="@+id/tv_child_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#333"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_vertical"
+                    android:text="孩子手机"
+                    android:layout_marginLeft="18dp"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/et_child_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textColor="#333"
+                    android:inputType="number"
+                    android:gravity="center_vertical"
+                    android:focusable="false"
+                    android:textColorHint="#cccccc"
+                    android:hint="请输入孩子手机"
+                    android:textSize="16dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="#11000000" />
+                <LinearLayout
+                    android:id="@+id/ll_child_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#333"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:text="孩子学校"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/et_child_school"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:focusable="false"
+                        android:textColor="#333"
+                        android:gravity="center_vertical"
+                        android:textColorHint="#cccccc"
+                        android:hint="请输入孩子学校"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:background="#11000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_child_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#333"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:text="孩子年级"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/tv_child_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="#333"
+                        android:gravity="center_vertical"
+                        android:textColorHint="#cccccc"
+                        android:hint="请输入孩子年级"
+                        android:focusable="false"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:background="#11000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:textColor="#333"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:text="设备机型"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="#333"
+                        android:gravity="center_vertical"
+                        android:text="vivo x20"
+                        android:textSize="16dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:background="#11000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:visibility="gone"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="8dp"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        android:gravity="center_vertical"
+                        android:text="性别：" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_child_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_sex_nan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/my_rb_select"
+                            android:checked="true"
+                            android:text="男" />
+
+                        <RadioButton
+                            android:id="@+id/rb_sex_nv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/my_rb_select"
+                            android:layout_marginLeft="15dp"
+                            android:text="女" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_child_yjgk"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:paddingRight="36dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:text="一键管控" />
+
+                <ImageView
+                    android:id="@+id/iv_yjgk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/clock_off" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_child_slbh"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:paddingRight="36dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:text="视力保护" />
+
+                <ImageView
+                    android:id="@+id/iv_slbh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/clock_off" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_child_jzsw"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:paddingRight="36dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:text="孩子管控计划" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mine_change_jiantou" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:visibility="gone"
+                android:id="@+id/rl_child_unbindcode"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="36dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:text="查看孩子端卸载码" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mine_change_jiantou" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp">
+            <TextView
+                android:id="@+id/bt_child_delete"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/btn_lv"
+                android:text="删除孩子"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

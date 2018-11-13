@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="245dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/find_1"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:background="@drawable/find_new_msg_bg"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:id="@+id/tv_new_msg"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:visibility="gone"
+        android:text="1条新信息"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icon_head"
+        android:id="@+id/iv_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="55dp"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:id="@+id/tv_name"
+        android:textColor="@color/white"
+        android:text="自己"/>
+
+</RelativeLayout>

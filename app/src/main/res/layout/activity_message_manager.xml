@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.hzkc.parent.activity.ChildManagerActivity">
+    <include layout="@layout/activity_top"></include>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/lv_message_list"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/fl_kongbai"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/no_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

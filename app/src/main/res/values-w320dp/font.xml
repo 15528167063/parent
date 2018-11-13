@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="text_larger">13.33sp</dimen>
+<dimen name="text_XX_larger">19.55sp</dimen>
+<dimen name="text_mini">10.66sp</dimen>
+<dimen name="text_least_mini">8.88sp</dimen>
+<dimen name="text_XXX_larger">32.0sp</dimen>
+<dimen name="text_Increase_larger">14.66sp</dimen>
+<dimen name="text_medium">12.44sp</dimen>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/main_fillet_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dialog_select_img_camera"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="15dp"
+            android:padding="16dp"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#333"
+            android:text="拍摄新照片"
+            android:drawableLeft="@drawable/mine_pz"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#ddd"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"/>
+        <TextView
+            android:id="@+id/dialog_select_img_photograph"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="15dp"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#333"
+            android:text="从相册选择"
+            android:drawableLeft="@drawable/mine_xc"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ddd"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="27dp"/>
+
+
+        <TextView
+            android:id="@+id/dialog_select_img_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:visibility="gone"
+            android:text="取消"
+            android:textColor="#333"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

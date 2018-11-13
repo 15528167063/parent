@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:padding="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:src="@drawable/ic_launcher"
+                android:id="@+id/iv_hf_icon"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                fresco:placeholderImage="@drawable/ic_launcher"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"/>
+        </FrameLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_hf_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红楼"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_hf_time"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16分钟前       "
+                android:textColor="@color/mygrey"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tv_content"
+                android:text="这是回复消息的格式。这是回复消息的格式这是回复消息的格式这是回复消息的格式这是回复消息的格式"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image"
+        android:background="@drawable/linearlayout_auto"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_gravity="right"
+        android:src="@drawable/compose_photo_close"
+        android:layout_width="18dp"
+        android:layout_height="18dp" />
+</FrameLayout>

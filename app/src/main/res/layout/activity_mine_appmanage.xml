@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/activity_top_solider"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义设置禁用名单，将会对所有绑定的士兵生效"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textColor="#666"
+                android:textSize="12dp"
+                android:padding="8dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="添加名单"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#333"
+                android:textSize="12dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/shape__bg1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="8dp"
+                android:background="#99999999"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/listview"
+                    android:scrollbars="none"/>
+                <LinearLayout
+                    android:id="@+id/fl_kongbai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_marginTop="80dp"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/no_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_height="wrap_content" />
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_gravity="center_horizontal"-->
+                        <!--android:text="暂无黑白名单应用"-->
+                        <!--android:layout_marginTop="12dp"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:layout_height="wrap_content" />-->
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

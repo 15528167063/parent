@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="370dp">
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="323dp"
+        android:background="@drawable/shape_choose_child"
+        android:layout_marginTop="50dp" >
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="143dp"
+            android:textSize="26sp"
+            android:textColor="#666666"
+            android:text="未知"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/tv_choose1"
+            android:layout_width="233.5dp"
+            android:layout_height="41.5dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="62.5dp"
+            android:text="选择"
+            android:gravity="center"
+            android:background="@drawable/btn_blue"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/tv_choose2"
+            android:layout_width="233.5dp"
+            android:layout_height="41.5dp"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginTop="62.5dp"
+            android:text="选择"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/btn_white"
+            android:layout_centerHorizontal="true" />
+  </RelativeLayout>
+
+    <View
+        android:layout_width="177dp"
+        android:layout_height="177dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_choose_image"
+        />
+    <com.hzkc.parent.view.CircleImageView
+        android:id="@+id/iv_head"
+        android:layout_width="160dp"
+        android:layout_marginTop="8.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_head"
+        android:layout_height="160dp" />
+</RelativeLayout>

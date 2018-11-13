@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="#FFF">
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal"
+            android:paddingRight="20dp"
+            android:paddingTop="14dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/mine_wddd"
+                android:layout_marginRight="14dp"
+                android:id="@+id/iv_mine_icon"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="13dp"
+                android:id="@+id/tv_mine_name"
+                android:gravity="center_vertical"
+                android:text="我的订单" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_share"
+                android:gravity="center_vertical"
+                android:text="分享有礼"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_red"
+                android:padding="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="10dp"
+                android:id="@+id/tv_erweima"
+                android:gravity="center_vertical"
+                android:text="推广二维码"
+                android:layout_marginRight="10dp"
+                android:padding="3dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/mine_yjt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="18dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/lin_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ddd"/>
+        <View
+            android:id="@+id/lin_2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:visibility="gone"
+            android:background="#f7f7f7"/>
+    </LinearLayout>
+</LinearLayout>

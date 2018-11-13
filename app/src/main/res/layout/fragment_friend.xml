@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11CCCCCC"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#55A1FF">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通讯录"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+        <ImageView
+            android:id="@+id/iv_add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="8dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:src="@drawable/add_stop_plan" />
+    </RelativeLayout>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_friend"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_tab1_connect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:checked="true"
+            android:background="@null"
+            android:button="@null"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textColor="@drawable/selector_tab_text_color"
+            android:text="聊天" />
+
+        <RadioButton
+            android:id="@+id/rb_tab2_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@null"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:textColor="@drawable/selector_tab_text_color"
+            android:text="联系人" />
+    </RadioGroup>
+    <com.hzkc.parent.view.NoScrollViewPager
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/vp_friend"
+        android:layout_height="0dp">
+    </com.hzkc.parent.view.NoScrollViewPager>
+</LinearLayout>

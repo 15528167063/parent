@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hzkc.parent"> <!-- 友盟统计  a9d7cb0e3372db56c182feebcaf13e10-->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- ================ IM start ============== -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.hyphenate.chatuidemo.permission.MIPUSH_RECEIVE" />
+    <!-- ================ IM end  =============== -->
+    <application
+        android:name="com.hzkc.parent.appcation.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/parent_ico"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.hzkc.parent.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58eafb6ba40fa3535e0014f2" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="my Channel ID" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="2350eec74e7993f992566221851bcf4c" />
+        <meta-data android:name="com.hzkc.parent.utils..GlideCache"
+            android:value="GlideCache"/>
+        <!-- 百度地图 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="yxRvRF45vyZ8AzRZbid1e9gA4KOAa3y7" />
+
+        <activity
+            android:name="com.hzkc.parent.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/parent_ico"
+            android:theme="@style/Appstyle2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.hzkc.parent.activity.AddChildActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ParentZxingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChildLoadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.SettingAndHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChildManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.AccountManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.AboutMineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Appstyle2"
+            android:screenOrientation="portrait" />
+        <!---->
+        <activity
+            android:name="com.hzkc.parent.activity.RegisterUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.FindPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.AddChildMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.StopInternetPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.AddStopInternetPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.EyeProtectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChildDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChangeStopInternetPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Appstyle2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChildLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105702494" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.hzkc.parent.service.MianService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.hzkc.parent.activity.LoveTrailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.AppWhiteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.MineMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.NetControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ConnectMineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.AddAppWhiteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.OpinionBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.TouchMineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.FindArticleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.AppUseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.MoreFunctionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.hzkc.parent.activity.AddNetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.OrderHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.AlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.HandleAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.FindCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.FindCommentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChangeNcActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.MyCommentTzActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChildDownloadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.GuideActivity"
+            android:theme="@style/Appstyle2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.FindAddFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.MyUserAgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.UpgradeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTransparent" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChildUnbindCodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hzkc.parent.activity.ChangeNcAndIocnActivity"
+            android:screenOrientation="portrait"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.hzkc.parent.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:name="com.hzkc.parent.activity.AddChildsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChildDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChildStateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.ChooseActivity"
+            android:theme="@style/DialogTransparent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.GuangKongActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.AppManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hzkc.parent.activity.LocationHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.hzkc.parent.activity.FunctionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.MyMemeberActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.MyOrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.WebDataUrlActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.ParResultActivity"
+            android:screenOrientation="portrait"/>
+        <!--支付宝start-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!--支付宝end-->
+        <activity
+            android:name="com.hzkc.parent.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name="com.hzkc.parent.activity.AppManageLastActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hzkc.parent.activity.PhoneManageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hzkc.parent.activity.HelpCenterActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hzkc.parent.solider.activity.MainSoldActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.ChooseChildrenActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.ParentZxingsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.ChildDownloadsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.SoliderDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.AppManageSoliderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.MineAppManageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.ControllDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.TeamControllActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.AddTeamInternetPlanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.ChangeTeamInternetPlanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.SoliderLocationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.SoliderManagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.solider.activity.SoliderUnbindCodeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.WebDataCommdActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.NetControlNewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.AddNewNetActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.MyNewMemeberActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.PhoneQinQingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.MessageManagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.ChildNewDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.InforH5Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hzkc.parent.activity.MineSettingActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hzkc.parent.activity.ChildLocationActivity">
+
+    <include layout="@layout/activity_top_new"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#66000000"
+            android:text=""
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:id="@+id/tv_detail_address"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll_load"
+            android:gravity="center"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:src="@drawable/child_location_write"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="此操作较耗时，请耐心等待"
+                android:textSize="18dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/no_load"
+            android:gravity="center"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="定位失败，请稍后重试"
+                android:textSize="18dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/activity_top"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mine_abus"
+                android:layout_gravity="center_vertical" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#333"
+                    android:text="优成长"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_bb"
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#333"
+                    android:layout_marginTop="10dp"
+                    android:text="V1.6.5"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.hzkc.parent.view.ChangeTextViewSpace
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="14dp"
+        android:text="         优成长是一款让家长规划3—18岁孩子合理使用手机，避免孩子过度、滥用手机的移动应用软件，是我公司十多年深耕K12教育的智慧结晶。我们致力于与家长一起陪伴孩子，让孩子合理的分配学习、休息和使用手机时间。陪伴是家长对孩子最好的教育，也是优成长的最高宗旨。"
+        android:lineSpacingExtra="6dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16dp"
+        android:textColor="#333"
+        android:layout_marginTop="30dp"
+        android:text="邮箱"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16dp"
+        android:textColor="#333"
+        android:layout_marginTop="10dp"
+        android:text="ccsteamproiect@163.com"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16dp"
+        android:textColor="#333"
+        android:layout_marginTop="20dp"
+        android:text="服务热线"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="16dp"
+        android:textColor="#333"
+        android:layout_marginTop="10dp"
+        android:text="18382270621"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:id="@+id/tv_xbb"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_lv"
+            android:text="检测到新版本"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/tv_xbb_no"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_gray"
+            android:text="已是最新版本"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:text="©四川宏劲科技有限公司" />
+
+</LinearLayout>

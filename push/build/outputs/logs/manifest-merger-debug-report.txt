@@ -1,0 +1,369 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\demos\parent\push\AndroidManifest.xml:2:1-198:12
+INJECTED from E:\demos\parent\push\AndroidManifest.xml:2:1-198:12
+INJECTED from E:\demos\parent\push\AndroidManifest.xml:2:1-198:12
+INJECTED from E:\demos\parent\push\AndroidManifest.xml:2:1-198:12
+INJECTED from E:\demos\parent\push\AndroidManifest.xml:2:1-198:12
+INJECTED from E:\demos\parent\push\AndroidManifest.xml:2:1-198:12
+INJECTED from E:\demos\parent\push\AndroidManifest.xml:2:1-198:12
+	package
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:3:5-36
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml
+	android:versionName
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:5:5-30
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:4:5-28
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml
+permission#${applicationId}.permission.MIPUSH_RECEIVE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:7:5-9:55
+	android:protectionLevel
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:9:9-52
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:8:9-66
+uses-permission#android.permission.INTERNET
+ADDED from E:\demos\parent\push\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:12:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:13:5-76
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:13:22-73
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:14:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\demos\parent\push\AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:15:22-65
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:16:5-75
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:16:22-72
+uses-permission#android.permission.BROADCAST_PACKAGE_ADDED
+ADDED from E:\demos\parent\push\AndroidManifest.xml:17:5-82
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:17:22-79
+uses-permission#android.permission.BROADCAST_PACKAGE_CHANGED
+ADDED from E:\demos\parent\push\AndroidManifest.xml:18:5-84
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:18:22-81
+uses-permission#android.permission.BROADCAST_PACKAGE_INSTALL
+ADDED from E:\demos\parent\push\AndroidManifest.xml:19:5-84
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:19:22-81
+uses-permission#android.permission.BROADCAST_PACKAGE_REPLACED
+ADDED from E:\demos\parent\push\AndroidManifest.xml:20:5-85
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:20:22-82
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from E:\demos\parent\push\AndroidManifest.xml:21:5-75
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:21:22-72
+uses-permission#android.permission.GET_TASKS
+ADDED from E:\demos\parent\push\AndroidManifest.xml:22:5-68
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:22:22-65
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from E:\demos\parent\push\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:23:22-78
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:24:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:25:5-76
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:25:22-73
+uses-permission#${applicationId}.permission.MIPUSH_RECEIVE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:26:22-79
+application
+ADDED from E:\demos\parent\push\AndroidManifest.xml:28:5-196:19
+service#com.taobao.accs.ChannelService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:30:9-40:19
+	android:process
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:33:13-39
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:31:13-58
+intent-filter#action:name:com.taobao.accs.intent.action.SERVICE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:34:13-36:29
+action#com.taobao.accs.intent.action.SERVICE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:35:17-80
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:35:25-77
+intent-filter#action:name:com.taobao.accs.intent.action.ELECTION
+ADDED from E:\demos\parent\push\AndroidManifest.xml:37:13-39:29
+action#com.taobao.accs.intent.action.ELECTION
+ADDED from E:\demos\parent\push\AndroidManifest.xml:38:17-81
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:38:25-78
+service#com.taobao.accs.data.MsgDistributeService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:42:9-48:19
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:44:13-36
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:43:13-69
+intent-filter#action:name:com.taobao.accs.intent.action.RECEIVE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:45:13-47:29
+action#com.taobao.accs.intent.action.RECEIVE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:46:17-80
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:46:25-77
+receiver#com.taobao.accs.EventReceiver
+ADDED from E:\demos\parent\push\AndroidManifest.xml:50:9-66:20
+	android:process
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:52:13-39
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:51:13-57
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from E:\demos\parent\push\AndroidManifest.xml:53:13-55:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from E:\demos\parent\push\AndroidManifest.xml:54:17-79
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:54:25-76
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:56:13-58:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:57:17-79
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:57:25-76
+intent-filter#action:name:android.intent.action.PACKAGE_REMOVED+data:scheme:package
+ADDED from E:\demos\parent\push\AndroidManifest.xml:59:13-62:29
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from E:\demos\parent\push\AndroidManifest.xml:60:17-80
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:60:25-77
+data
+ADDED from E:\demos\parent\push\AndroidManifest.xml:61:17-50
+	android:scheme
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:61:23-47
+intent-filter#action:name:android.intent.action.USER_PRESENT
+ADDED from E:\demos\parent\push\AndroidManifest.xml:63:13-65:29
+action#android.intent.action.USER_PRESENT
+ADDED from E:\demos\parent\push\AndroidManifest.xml:64:17-77
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:64:25-74
+receiver#com.taobao.accs.ServiceReceiver
+ADDED from E:\demos\parent\push\AndroidManifest.xml:68:9-77:20
+	android:process
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:70:13-39
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:69:13-59
+intent-filter#action:name:com.taobao.accs.intent.action.COMMAND
+ADDED from E:\demos\parent\push\AndroidManifest.xml:71:13-73:29
+action#com.taobao.accs.intent.action.COMMAND
+ADDED from E:\demos\parent\push\AndroidManifest.xml:72:17-80
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:72:25-77
+intent-filter#action:name:com.taobao.accs.intent.action.START_FROM_AGOO
+ADDED from E:\demos\parent\push\AndroidManifest.xml:74:13-76:29
+action#com.taobao.accs.intent.action.START_FROM_AGOO
+ADDED from E:\demos\parent\push\AndroidManifest.xml:75:17-88
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:75:25-85
+service#com.taobao.accs.ChannelService$KernelService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:79:9-81:42
+	android:process
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:81:13-39
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:80:13-72
+service#org.android.agoo.accs.AgooService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:83:9-89:19
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:85:13-36
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:84:13-61
+service#com.umeng.message.UmengIntentService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:91:9-98:19
+	android:process
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:94:13-39
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:93:13-36
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:92:13-64
+intent-filter#action:name:org.agoo.android.intent.action.RECEIVE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:95:13-97:29
+action#org.agoo.android.intent.action.RECEIVE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:96:17-81
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:96:25-78
+service#com.umeng.message.XiaomiIntentService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:100:9-107:19
+	android:process
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:103:13-39
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:102:13-36
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:101:13-65
+receiver#com.taobao.agoo.AgooCommondReceiver
+ADDED from E:\demos\parent\push\AndroidManifest.xml:109:9-120:20
+	android:process
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:112:13-39
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:111:13-36
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:110:13-63
+intent-filter#action:name:${applicationId}.intent.action.COMMAND
+ADDED from E:\demos\parent\push\AndroidManifest.xml:113:13-115:29
+action#${applicationId}.intent.action.COMMAND
+ADDED from E:\demos\parent\push\AndroidManifest.xml:114:17-81
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:114:25-78
+service#com.umeng.message.UmengMessageIntentReceiverService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:122:9-129:19
+	android:process
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:125:13-39
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:124:13-36
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:123:13-79
+intent-filter#action:name:org.android.agoo.client.MessageReceiverService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:126:13-128:29
+action#org.android.agoo.client.MessageReceiverService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:127:17-89
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:127:25-86
+receiver#com.umeng.message.NotificationProxyBroadcastReceiver
+ADDED from E:\demos\parent\push\AndroidManifest.xml:131:9-133:40
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:133:13-37
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:132:13-80
+service#com.umeng.message.UmengMessageCallbackHandlerService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:135:9-153:19
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:137:13-37
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:136:13-80
+intent-filter#action:name:com.umeng.messge.registercallback.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:138:13-140:29
+action#com.umeng.messge.registercallback.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:139:17-83
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:139:25-80
+intent-filter#action:name:com.umeng.message.enablecallback.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:141:13-143:29
+action#com.umeng.message.enablecallback.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:142:17-82
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:142:25-79
+intent-filter#action:name:com.umeng.message.disablecallback.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:144:13-146:29
+action#com.umeng.message.disablecallback.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:145:17-83
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:145:25-80
+intent-filter#action:name:com.umeng.message.message.handler.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:147:13-149:29
+action#com.umeng.message.message.handler.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:148:17-83
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:148:25-80
+intent-filter#action:name:com.umeng.message.message.sendmessage.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:150:13-152:29
+action#com.umeng.message.message.sendmessage.action
+ADDED from E:\demos\parent\push\AndroidManifest.xml:151:17-87
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:151:25-84
+service#com.umeng.message.UmengDownloadResourceService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:155:9-157:40
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:157:13-37
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:156:13-74
+provider#com.umeng.message.provider.MessageProvider
+ADDED from E:\demos\parent\push\AndroidManifest.xml:159:9-164:20
+	android:authorities
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:161:13-65
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:162:13-37
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:160:13-70
+grant-uri-permission
+ADDED from E:\demos\parent\push\AndroidManifest.xml:163:13-62
+	android:pathPattern
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:163:35-59
+service#com.xiaomi.mipush.sdk.PushMessageHandler
+ADDED from E:\demos\parent\push\AndroidManifest.xml:167:9-170:39
+	android:enabled
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:169:13-35
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:170:13-36
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:168:13-68
+service#com.xiaomi.mipush.sdk.MessageHandleService
+ADDED from E:\demos\parent\push\AndroidManifest.xml:172:9-174:38
+	android:enabled
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:174:13-35
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:173:13-70
+receiver#org.android.agoo.xiaomi.MiPushBroadcastReceiver
+ADDED from E:\demos\parent\push\AndroidManifest.xml:176:9-185:20
+	android:exported
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:178:13-36
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:177:13-75
+intent-filter#action:name:com.xiaomi.mipush.RECEIVE_MESSAGE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:179:13-181:29
+action#com.xiaomi.mipush.RECEIVE_MESSAGE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:180:17-76
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:180:25-73
+intent-filter#action:name:com.xiaomi.mipush.ERROR
+ADDED from E:\demos\parent\push\AndroidManifest.xml:182:13-184:29
+action#com.xiaomi.mipush.ERROR
+ADDED from E:\demos\parent\push\AndroidManifest.xml:183:17-66
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:183:25-63
+receiver#org.android.agoo.huawei.HuaWeiReceiver
+ADDED from E:\demos\parent\push\AndroidManifest.xml:188:9-195:20
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:188:19-72
+intent-filter#action:name:com.huawei.android.push.intent.RECEIVE+action:name:com.huawei.android.push.intent.REGISTRATION+action:name:com.huawei.intent.action.PUSH+action:name:com.huawei.intent.action.PUSH_STATE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:189:13-194:29
+action#com.huawei.android.push.intent.REGISTRATION
+ADDED from E:\demos\parent\push\AndroidManifest.xml:190:17-86
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:190:25-83
+action#com.huawei.android.push.intent.RECEIVE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:191:17-81
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:191:25-78
+action#com.huawei.intent.action.PUSH
+ADDED from E:\demos\parent\push\AndroidManifest.xml:192:17-72
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:192:25-69
+action#com.huawei.intent.action.PUSH_STATE
+ADDED from E:\demos\parent\push\AndroidManifest.xml:193:17-78
+	android:name
+		ADDED from E:\demos\parent\push\AndroidManifest.xml:193:25-75
+uses-sdk
+INJECTED from E:\demos\parent\push\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\demos\parent\push\AndroidManifest.xml
+INJECTED from E:\demos\parent\push\AndroidManifest.xml
+INJECTED from E:\demos\parent\push\AndroidManifest.xml
+INJECTED from E:\demos\parent\push\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml
+		ADDED from E:\demos\parent\push\AndroidManifest.xml
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml
+		ADDED from E:\demos\parent\push\AndroidManifest.xml
+		INJECTED from E:\demos\parent\push\AndroidManifest.xml

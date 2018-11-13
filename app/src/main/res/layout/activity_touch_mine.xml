@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_touch_mine"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activitybgcolor"
+    android:layout_height="match_parent"
+    tools:context="com.hzkc.parent.activity.TouchMineActivity">
+    <include layout="@layout/activity_top"></include>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:id="@+id/ll_connect_phone"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/accout_manger_tab1"
+                android:drawablePadding="14dp"
+                android:textSize="13dp"
+                android:gravity="center_vertical"
+                android:text="家长交流群" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话号码"
+                android:textSize="13dp"
+                android:id="@+id/tv_connect_phone"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

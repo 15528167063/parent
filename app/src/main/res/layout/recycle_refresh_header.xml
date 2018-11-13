@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip">
+
+
+    <ProgressBar
+        android:layout_centerVertical="true"
+        android:id="@+id/pull_to_refresh_progress"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/pull_to_refresh_textlay"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progressbar_default"
+        android:indeterminateDuration="500" />
+
+    <LinearLayout
+        android:id="@+id/pull_to_refresh_textlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pull_to_refresh_updated_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="冻品汇买卖更简单"
+            android:textSize="13dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#5f646e" />
+
+        <TextView
+            android:id="@+id/pull_to_refresh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/pull_to_refresh_pull_label"
+            android:textSize="11dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#a9a9a9" />
+    </LinearLayout>
+</RelativeLayout>

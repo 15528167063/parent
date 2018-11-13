@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingLeft="15dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/lin_all"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_vip_mine"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_tj"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mine_tj" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:text="12个月"
+            android:textSize="16dp"
+            android:textColor="#333"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <!--<TextView-->
+            <!--android:id="@+id/tv_price_1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="￥100"-->
+            <!--android:textSize="22dp"-->
+            <!--android:textColor="@color/newcolor"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content" />-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="￥"
+                android:textSize="14dp"
+                android:textColor="@color/newcolor"
+                android:gravity="bottom"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_price_1"
+                android:layout_width="wrap_content"
+                android:text="100"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/newcolor"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_price_2"
+            android:layout_width="wrap_content"
+            android:text="600"
+            android:textSize="10dp"
+            android:textColor="#999999"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_price_3"
+            android:layout_width="wrap_content"
+            android:text="折合￥8.3/月"
+            android:textSize="10dp"
+            android:textColor="#999999"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_low"
+            android:layout_width="wrap_content"
+            android:text="单月最低"
+            android:textSize="10dp"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/mine_dz"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:background="@drawable/btn_lv"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

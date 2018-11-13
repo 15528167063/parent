@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11CCCCCC"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:background="@color/newcolor">
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="108dp"
+                android:layout_height="108dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/iv_mine_child_icon"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mine_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible"
+                    android:id="@+id/iv_mine_sex"
+                    android:src="@drawable/child_sex_nv" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/tv_child_name"
+                android:text="请添加孩子"
+                android:maxLines="1"
+                android:textColor="#333"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/iv_vip_icon"
+                    android:src="@drawable/minepager_vip_icon"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="VIP有效日期至"
+                    android:textSize="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_vip_time"
+                    android:text="2017-01-01"
+                    android:textSize="14dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/blue"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_vip_outtime"
+                    android:visibility="gone"
+                    android:text="(已过期)"
+                    android:textSize="14dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+            <LinearLayout
+                android:id="@+id/id_child_manger"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue11"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="孩子管理"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/mine_child" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_account_manager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue11"
+                android:layout_marginLeft="50dp"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="账号管理"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/mine_account" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lv_mine"
+        android:scrollbars="none"
+        android:listSelector="@color/transparent"
+        android:divider="@null"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

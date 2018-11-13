@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="61dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="#FFF"
+    android:paddingLeft="20dp"
+    android:paddingRight="16dp">
+    <ImageView
+        android:id="@+id/iv_child_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/mine_head__01" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_child_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#333"
+            android:gravity="center_vertical"
+            android:text="豆豆"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/tv_child_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#333"
+            android:layout_alignParentRight="true"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/mine_yjt" />
+</LinearLayout>

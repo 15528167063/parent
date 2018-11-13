@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/rl_top"
+    android:background="@color/blues">
+
+    <TextView
+        android:id="@+id/tv_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="优成长"
+        android:textColor="#fff"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/iv_add_child"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:src="@drawable/internet_me"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/top_change_jiantou"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_finish_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/top_change_jiantou"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawablePadding="10dp"
+        android:textSize="12dp"
+        android:text="我的"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_finish_accountmanager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/top_change_jiantou"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawablePadding="10dp"
+        android:textSize="12dp"
+        android:text="账号管理"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_finish_childdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/top_change_jiantou"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawablePadding="10dp"
+        android:textSize="12dp"
+        android:text="士兵管理"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_finish_stop_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/top_change_jiantou"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawablePadding="10dp"
+        android:textSize="12dp"
+        android:text="首页"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_finish_net_control"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/top_change_jiantou"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawablePadding="10dp"
+        android:textSize="12dp"
+        android:text="上网管控"
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/shouye_wo"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tv_cancel_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/stop_plan_cnacel"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawablePadding="10dp"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="保存"
+        android:textColor="#fff"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:drawablePadding="10dp"
+        android:textSize="12dp"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginRight="50dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/shouye_jiahao"
+        android:layout_toLeftOf="@id/tv_save"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="提交"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/iv_help"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/wenhao"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_save1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="保存"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/iv_add_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/add_stop_plan"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/refreshs"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tv_zhangdan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:text="账单"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btn_wroke"
+        android:textColor="#fff"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textSize="12dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_zhangdan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:drawableRight="@drawable/timeline_icon_more"
+        android:text="2017"
+        android:layout_marginRight="8dp"
+        android:drawablePadding="5dp"
+        android:background="@drawable/btn_wroke"
+        android:textColor="#fff"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textSize="12dp"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/iv_add_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:src="@drawable/shouye_jiahao"
+        android:visibility="gone" />
+</RelativeLayout>

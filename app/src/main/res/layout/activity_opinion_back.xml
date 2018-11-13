@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hzkc.parent.activity.OpinionBackActivity">
+
+    <include layout="@layout/activity_top_new" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:id="@+id/et_contact"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:enabled="true"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入微信，手机或手机联系方式"
+            android:textColorHint="#ddd"
+            android:maxLength="800"
+            android:textSize="14dp"
+            android:textColor="#333"
+            android:scrollbars="vertical" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-10dp"
+            android:layout_height="1px"
+            android:layout_marginBottom="20dp"
+            android:background="#99999999"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/et_opinion_content"
+            android:background="@drawable/opinionback_text_bg"
+            android:padding="10dp"
+            android:enabled="true"
+            android:gravity="top"
+            android:textColorHint="#ddd"
+            android:hint="请输入您宝贵的意见或建议(800字以内)"
+            android:maxLength="800"
+            android:textSize="14dp"
+            android:textColor="#333"
+            android:scrollbars="vertical" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="欢迎您给我们提出宝贵的建议或意见，您的反馈会为我们的服务带来更好的提升"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#666666"
+            android:textSize="14dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="22dp"
+            android:text="加入官方QQ群：433717321"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:id="@+id/tv_useropinion_submit"
+            android:background="@drawable/btn_lv"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

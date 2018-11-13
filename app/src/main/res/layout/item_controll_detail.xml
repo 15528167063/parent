@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:scrollbars="none"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@null"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/lv_title"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="12dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:text="姓名"
+                android:textSize="15dp"
+                android:textColor="#333"
+                android:layout_marginLeft="8dp"
+                android:layout_alignRight="@+id/iv_app_icon"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="性别"
+                android:textColor="#333"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="地方"
+                android:visibility="gone"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textColor="#333"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="小队"
+                android:visibility="gone"
+                android:textColor="#333"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="状态"
+                android:textColor="#333"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8" />
+
+            <TextView
+                android:layout_width="110dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="注册时间"
+                android:textSize="15dp"
+                android:singleLine="true"
+                android:textColor="#333"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="160dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="最近登录时间"
+                android:textSize="15dp"
+                android:textColor="#333"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="位置"
+                android:textColor="#333"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingRight="20dp"
+                android:paddingBottom="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="60dp"
+                    android:gravity="center"
+                    android:text="姓名"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/tv_name"
+                    android:layout_alignRight="@+id/iv_app_icon"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="性别"
+                    android:textSize="13dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_place"
+                    android:layout_width="60dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="兰陵"
+                    android:visibility="gone"
+                    android:textSize="13dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_team"
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:text="兰陵中队"
+                    android:textSize="13dp"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_controll"
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="团控中"
+                    android:textSize="13dp"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_regist"
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="注册时间"
+                    android:textSize="13dp"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_lasttime"
+                    android:layout_width="160dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="最近登录时间"
+                    android:textSize="13dp"
+                    android:layout_gravity="center"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="位置"
+                    android:textSize="13dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

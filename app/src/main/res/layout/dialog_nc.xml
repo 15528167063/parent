@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <EditText
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/register_edtext_bg"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="44dp"
+            android:hint="请输入您的昵称"
+            android:id="@+id/et_nc"
+            android:textSize="15dp"
+            android:textColor="#c1c6c6"
+            android:inputType="text"
+            android:padding="12dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="18dp"
+            android:textSize="12dp"
+            android:textColor="#666666"
+            android:text="注：如果输入昵称为空，将无法登陆"
+            android:layout_height="wrap_content" />
+</LinearLayout>

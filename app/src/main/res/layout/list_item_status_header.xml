@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:padding="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/profile_img"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            fresco:placeholderImage="@drawable/ic_launcher"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红楼"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <ImageView
+            android:layout_toRightOf="@+id/profile_name"
+            android:src="@drawable/tabbar_compose_icon_add"
+            android:id="@+id/profile_verified"
+            android:layout_width="18dp"
+            android:visibility="invisible"
+            android:layout_height="18dp"
+            android:layout_gravity="bottom|right"
+            />
+        <TextView
+            android:id="@+id/profile_time"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16分钟前       "
+            android:textColor="@color/mygrey"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/weiboComeFrom"
+            android:layout_toRightOf="@+id/profile_time"
+            android:layout_alignBottom="@+id/profile_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自 微博weibo.com"
+            android:visibility="invisible"
+            android:textColor="@color/mygrey"
+            android:textSize="12sp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/popover_arrow"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/timeline_icon_more" />
+    </RelativeLayout>
+</LinearLayout>

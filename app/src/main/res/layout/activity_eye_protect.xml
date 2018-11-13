@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.hzkc.parent.activity.AddChildActivity">
+
+    <include layout="@layout/activity_top_new"></include>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ececec"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="#fff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="每隔" />
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wv_time_hour"
+                android:layout_width="60dp"
+                android:layout_height="80dp">
+
+            </com.wx.wheelview.widget.WheelView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="分钟" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/eye_divid"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="休息" />
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wv_time_minute"
+                android:layout_width="60dp"
+                android:layout_height="80dp">
+
+            </com.wx.wheelview.widget.WheelView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="分钟" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bt_open"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@drawable/btn_lv"
+        android:text="开启"
+        android:textColor="#fff"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:paddingTop="8dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plan_lbf"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="30dp"
+            android:textSize="14dp"
+            android:text="宝贝使用手机时间不宜过长，最佳时间为每隔30分钟休息5分钟。"
+            android:textColor="#666" />
+    </LinearLayout>
+</LinearLayout>

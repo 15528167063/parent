@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_child_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activitybgcolor"
+    android:orientation="vertical"
+    tools:context="com.hzkc.parent.activity.ChildDetailActivity">
+
+    <include layout="@layout/activity_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="16dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/child_detail_icon"
+                            android:id="@+id/iv_child_icon"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="孩子姓名"
+                            android:textColor="#595959"
+                            android:textSize="14dp"
+                            android:id="@+id/tv_child_name"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#11000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="8dp"
+                        android:textColor="#000"
+                        android:gravity="center_vertical"
+                        android:text="昵称："
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_child_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="#595959"
+                        android:gravity="center_vertical"
+                        android:hint="请输入孩子昵称"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="8dp"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        android:gravity="center_vertical"
+                        android:text="性别：" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_child_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_sex_nan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/my_rb_select"
+                            android:checked="true"
+                            android:text="男" />
+
+                        <RadioButton
+                            android:id="@+id/rb_sex_nv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:drawableLeft="@drawable/my_rb_select"
+                            android:layout_marginLeft="15dp"
+                            android:text="女" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_child_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="8dp"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:text="年级：" />
+
+                    <TextView
+                        android:id="@+id/tv_child_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#595959"
+                        android:layout_marginLeft="15dp"
+                        android:text="一年级" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_child_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center_vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="8dp"
+                        android:textColor="#000"
+                        android:gravity="center_vertical"
+                        android:text="学校："
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/et_child_school"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="#595959"
+                        android:gravity="center_vertical"
+                        android:hint="请输入孩子学校"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#11000000" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_child_yjgk"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="36dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:text="一键管控" />
+
+                    <ImageView
+                        android:id="@+id/iv_yjgk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/clock_off" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_child_slbh"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="36dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:text="视力保护" />
+
+                    <ImageView
+                        android:id="@+id/iv_slbh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/clock_off" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_child_jzsw"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="36dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:text="孩子管控计划" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/mine_change_jiantou" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:id="@+id/rl_child_unbindcode"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="36dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"
+                        android:text="查看孩子端卸载码" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/mine_change_jiantou" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+                <TextView
+                    android:id="@+id/bt_child_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="删除孩子"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

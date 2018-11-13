@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#11CCCCCC"
+    android:id="@+id/ll_add_child"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.hzkc.parent.activity.AddChildMessageActivity">
+    <include layout="@layout/activity_top"></include>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:id="@+id/rb_1"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/selector_add_child_boy"
+            android:layout_height="160dp" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:id="@+id/rb_2"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/selector_add_child_girl"
+            android:layout_height="160dp" />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="16dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawablePadding="8dp"
+                android:textSize="16dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入孩子姓名" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:background="#11000000"
+            android:layout_marginRight="12dp"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:id="@+id/rl_child_class_selecte"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/mine_share"
+                android:drawablePadding="8dp"
+                android:id="@+id/tv_child_class"
+                android:gravity="center_vertical"
+                android:text="一年级"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_change_jiantou" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:text="绑定"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/register_two_bg"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

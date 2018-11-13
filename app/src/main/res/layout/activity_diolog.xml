@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape__bg"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="禁用名单"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#333"
+        android:textSize="17dp"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="请输入应用名: "
+        android:gravity="center"
+        android:textColor="#999999"
+        android:textSize="13dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="13dp"
+        android:textColor="#666666"
+        android:background="@null"
+        android:id="@+id/editText1" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="请输入包名: "
+        android:gravity="center"
+        android:textColor="#999999"
+        android:textSize="13dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="13dp"
+        android:background="@null"
+        android:textColor="#666666"
+        android:id="@+id/editText2" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#99999999"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="请选择名单 : "
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textView6" />
+
+        <RadioGroup
+            android:id="@+id/client_charge_radiogroup"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#999999"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_checked"
+                android:drawablePadding="10dp"
+                android:textSize="13dp"
+                android:text="白名单" />
+            <RadioButton
+                android:id="@+id/rb_02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="黑名单"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/btn_checked"
+                android:textColor="#999999"
+                android:textSize="13dp"
+                android:checked="true" />
+        </RadioGroup>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#99999999"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp">
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="取消 "
+            android:gravity="center"
+            android:textColor="#333"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#99999999"/>
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="确定 "
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>

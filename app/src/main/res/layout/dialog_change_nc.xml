@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="34dp"
+        android:layout_marginLeft="34dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape__bg"
+        android:paddingTop="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="30dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/register_edtext_bg"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:layout_height="44dp"
+            android:hint="请输入你的昵称"
+            android:id="@+id/et_my_nc"
+            android:textSize="15dp"
+            android:textColor="#c1c6c6"
+            android:padding="12dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="当前昵称为： "
+            android:id="@+id/tv_my_nc"
+            android:textSize="14dp"
+            android:textColor="#333"
+            android:gravity="left"
+            android:padding="12dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="修改"
+            android:layout_marginTop="15dp"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:background="@drawable/btn_blue"
+            android:layout_height="44dp"
+            android:id="@+id/bt_comfirm" />
+    </LinearLayout>
+</LinearLayout>

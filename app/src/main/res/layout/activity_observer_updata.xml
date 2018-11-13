@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/blue"
+        android:paddingLeft="6dp"
+        android:paddingRight="0dp">
+        <ImageView
+            android:id="@+id/head_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="6dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/head_back_white"
+            android:visibility="visible" />
+
+        <RadioGroup
+            android:id="@+id/re_group"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/im_radio_bg"
+            android:checkedButton="@+id/im_main_news"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-2dp"
+            android:gravity="center"
+            android:padding="1dp">
+
+            <RadioButton
+                android:id="@+id/re_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/im_radio_left"
+                android:button="@null"
+                android:paddingBottom="6dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:paddingTop="6dp"
+                android:text="黑白名单"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@drawable/im_radio_color"
+                android:textSize="14dp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#fff"/>
+
+            <RadioButton
+                android:id="@+id/re_manage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/im_radio_right"
+                android:button="@null"
+                android:paddingBottom="6dp"
+                android:paddingLeft="8dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp"
+                android:text="软件管理"
+                android:textColor="@drawable/im_radio_color"
+                android:textSize="14dp" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/head_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="保存"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/im_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

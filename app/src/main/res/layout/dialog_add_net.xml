@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="34dp"
+        android:layout_marginLeft="34dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape__bg"
+        android:paddingTop="30dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入网址"
+            android:textColor="#333"
+            android:textSize="16dp"
+            android:gravity="center">
+        </TextView>
+        <EditText
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/register_edtext_bg"
+            android:maxLines="1"
+            android:layout_height="44dp"
+            android:hint="禁用网址或关键字"
+            android:id="@+id/et_my_nc"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:textColor="#333"
+            android:textColorHint="#999"
+            android:padding="12dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="25dp"
+            android:background="#ddd"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="取消"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="#666"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_cancle" />
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#ddd"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="确认"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="15dp"
+                android:textColor="@color/newcolor"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_comfirm" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

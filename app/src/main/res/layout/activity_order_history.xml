@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.hzkc.parent.activity.OrderHistoryActivity">
+    <include layout="@layout/activity_top" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/lv_order_history"
+            android:divider="#f7f7f7"
+            android:dividerHeight="6dp"
+            android:layout_height="match_parent">
+        </ListView>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:id="@+id/tv_null"
+            android:visibility="invisible"
+            android:drawableTop="@drawable/no_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

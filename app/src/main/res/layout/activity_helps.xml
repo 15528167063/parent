@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape__bg"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="如何获取包名?"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#333"
+        android:textSize="17dp"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="第一步: "
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14dp"
+        android:gravity="center_vertical"
+        android:textColor="#666666"
+        android:background="@null"
+        android:text="在PC端网页上打开小米应用商店"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="第二步: "
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14dp"
+        android:textColor="#666666"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:text="进去小米商店后，输入应用名进行搜索" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="第三步: "
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="14dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14dp"
+        android:textColor="#666666"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:text="选择应用，点击查看详细，获取对应的包名"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14dp"
+        android:textColor="#666666"
+        android:gravity="center_vertical"
+        android:background="@null"
+        android:text="或者百度查询，获取应用对应包名"
+        android:layout_marginBottom="30dp"/>
+</LinearLayout>
